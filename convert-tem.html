@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert temp</title>
+</head>
+<body>
+<label> Fahrenheit</label>
+<input type="number" id="num1" oninput="convert(this.value)" onchange="convert(this.value)">
+
+<p>Celcius: </p>
+<p id="span1"></p>
+<script>
+
+    function convert(x){
+x=parseFloat(x);
+document.getElementById('span1').innerHTML=(x-32)/1.8;
+
+    }
+</script>
+</body>
+</html>
